@@ -1,1 +1,1 @@
-# SGM-Sistemas-Gesti-n-Empresarial-
+# SGM-Sistemas-Gestion-Empresarial-
