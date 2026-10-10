@@ -99,5 +99,5 @@ Indica almenys una empresa de cadascun dels tipus de mercat estudiats en la Unit
 **Por qué he elegido cada una:** La competencia perfecta es un modelo teórico (muchos vendedores y compradores, un producto casi idéntico y nadie capaz de fijar el precio), así que en la vida real solo hay
 mercados que se le parecen. El de frutas y hortalizas frescas es de los más cercanos: miles de agricultores ofrecen un producto muy similar y el precio lo marca el mercado; Anecoop agrupa a muchas cooperativas de ese sector.
 
-##  alba es la mejor 
+
 
