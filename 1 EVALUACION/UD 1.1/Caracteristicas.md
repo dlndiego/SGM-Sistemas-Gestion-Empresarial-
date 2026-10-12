@@ -7,6 +7,7 @@
 ###### ACTIVIDAD 1 
 
 **`ENUNCIADO:`**
+
 Cerca tres empreses nacionals que tinguin com a objectiu guanyar diners i tres més l'objectiu principal del qual sigui de fi social.
 
 És possible trobar alguna empresa que tingui finalitat social i a més el seu objectiu principal sigui guanyar diners? Busca-la.
@@ -85,6 +86,7 @@ Indica a quins mercats es dirigeixen majoritàriament.
 ###### ACTIVIDAD 3
 
 **`ENUNCIADO:`**
+
 Indica almenys una empresa de cadascun dels tipus de mercat estudiats en la Unitat Didàctica: competència perfecta, monopoli i oligopoli. Troba l'activitat al fet que es dedica cadascuna d'elles y troba la xifra de negoci anual de cadascuna d'elles.
 
 **`RESPUESTA:`**
@@ -98,6 +100,133 @@ Indica almenys una empresa de cadascun dels tipus de mercat estudiats en la Unit
 
 **Por qué he elegido cada una:** La competencia perfecta es un modelo teórico (muchos vendedores y compradores, un producto casi idéntico y nadie capaz de fijar el precio), así que en la vida real solo hay
 mercados que se le parecen. El de frutas y hortalizas frescas es de los más cercanos: miles de agricultores ofrecen un producto muy similar y el precio lo marca el mercado; Anecoop agrupa a muchas cooperativas de ese sector.
+
+###### ACTIVIDAD 4
+
+**`ENUNCIADO:`** 
+
+Busca dos empresas de cada sector (primario, secundario y terciario) indicando: actividad, productos principales, dónde
+están situadas, tamaño y titularidad del capital.
+
+**`RESPUESTA:`**
+
+###### `SECTOR PRIMARIO`
+
+| Característica | Detalle |
+| :--- | :--- |
+| **Empresa** | Atalaya Mining – Proyecto Riotinto ([atalayaming.com](https://atalayaming.com)) |
+| **Actividad** | Minería de cobre a cielo abierto (mina de Cerro Colorado, en la Faja Pirítica Ibérica). |
+| **Productos** | Concentrados de cobre. En el segundo trimestre de 2026 produjo 13.493 toneladas de cobre. |
+| **Ubicación** | Minas de Riotinto (Huelva, Andalucía). |
+| **Tamaño** | Grande: unos 470 trabajadores directos y más de 600 de empresas contratistas. |
+| **Capital** | Privado e internacional. Cotiza en la Bolsa de Londres y el grupo Trafigura es un accionista relevante. [Fuente](https://atalayaming.com) · [Fuente](https://atalayaming.com) |
+
+| Característica | Detalle |
+| :--- | :--- |
+| **Empresa** | Primaflor ([ficha](https://primaflor.com)) |
+| **Actividad** | Cultivo, producción y comercialización de verduras de hoja y ensaladas preparadas. |
+| **Productos** | Más de 100 productos: lechuga, espinacas, brotes, rabanitos, ajo pelado y ensaladas de IV gama. |
+| **Ubicación** | Sede en Pulpí (Almería); también produce en el Reino Unido. Clientes en más de 32 países. |
+| **Tamaño** | Grande: más de 6.400 hectáreas de producción y unas ventas de unos 150 M€ (datos de 2017). |
+| **Capital** | Privado y familiar español. [Fuente (Fruitnet)](https://www.fruitnet.com) |
+
+###### `SECTOR SECUNDARIO`
+
+| Característica | Detalle |
+| :--- | :--- |
+| **Empresa** | SEAT S.A. ([seat.es](https://www.seat.es)) |
+| **Actividad** | Fabricación de automóviles (marcas SEAT y CUPRA). |
+| **Productos** | Turismos. La fábrica de Martorell produjo 470.347 unidades en 2025. |
+| **Ubicación** | Martorell (Barcelona, Cataluña). |
+| **Tamaño** | Grande: unos 12.000 trabajadores entre la fábrica y la sede central. |
+| **Capital** | Privado y extranjero: filial del Grupo Volkswagen (alemán). [Fuente](https://www.seat.es) · [Fuente](https://www.seat.es) |
+
+---
+
+| Característica | Detalle |
+| :--- | :--- |
+| **Empresa** | Porcelanosa Grupo ([porcelanosa.com](https://www.porcelanosa.com)) |
+| **Actividad** | Fabricación y venta de cerámica y materiales para la construcción y el diseño de interiores (siete empresas). |
+| **Productos** | Azulejos y porcelánico de gran formato, baños, cocinas y otros materiales. |
+| **Ubicación** | Sede y fábricas en Vila-real (Castellón, Comunitat Valenciana). |
+| **Tamaño** | Grande: más de 5.000 trabajadores y unos 900 M€ de facturación. |
+| **Capital** | Privado, familiar y 100 % español (familias Soriano y Colonques). [Fuente](https://www.porcelanosa.com) · [Fuente](https://www.porcelanosa.com) |### Sector terciario
+
+###### `SECTOR TERCIARIO`
+
+| Característica | Detalle |
+| :--- | :--- |
+| **Empresa** | Mercadona ([mercadona.es](https://www.mercadona.es)) |
+| **Actividad** | Distribución comercial: supermercados y venta online. |
+| **Productos** | Alimentación, bebidas, limpieza e higiene, con mucha marca propia. |
+| **Ubicación** | Sede en Tavernes Blanques (Valencia); 1.672 tiendas en España y Portugal. |
+| **Tamaño** | Grande: 115.000 trabajadores y ventas de 41.858 M€ en 2025. |
+| **Capital** | Privado y familiar español (su presidente, Juan Roig, y su familia); no cotiza en bolsa. [Fuente](https://www.mercadona.es) |
+
+---
+
+| Característica | Detalle |
+| :--- | :--- |
+| **Empresa** | Correos (Sociedad Estatal Correos y Telégrafos) ([correos.es](https://www.correos.es)) |
+| **Actividad** | Servicios postales y de paquetería (grupo Correos: Correos Express y Correos Telecom). |
+| **Productos** | Cartas, paquetes, envíos urgentes y servicios de interés general; también comercializa seguros de AXA. |
+| **Ubicación** | Sede en Madrid y red de oficinas por toda España. |
+| **Tamaño** | Grande: 1.658 M€ de cifra de negocio en 2025 y unos 50.000 trabajadores (dato de 2022). |
+| **Capital** | **Público**: pertenece al 100 % a la SEPI, es decir, al Estado. [Fuente](https://www.correos.es) · [Fuente](https://www.correos.es) |
+
+###### ACTIVIDAD 5
+
+**`ENUNCIADO:`**
+
+*Busca en Internet páginas que hablen del plan de empresa. Intenta encontrar alguna que hable del plan de empresa para mujeres. Enumera los pasos necesarios según la página que hayas encontrado.*
+
+**`RESPUESTA`**
+
+### Qué he encontrado
+
+Existen multitud de recursos sobre planes de negocio, pero destacan especialmente los portales institucionales diseñados específicamente para emprendedoras:
+
+* **Programa de Apoyo Empresarial a las Mujeres (PAEM):** Impulsado por la **Cámara de Comercio de España** y el **Instituto de las Mujeres** (Ministerio de Igualdad). Ofrece asesoramiento integral, guías de emprendimiento y acceso al [Plan de Empresa PAEM](https://mde.es/recursos-para-el-emprendimiento-femenino/).
+* **Guías de Emprendimiento en Femenino de la Fundación Mujeres:** Herramientas y materiales de orientación disponibles en su plataforma [Fundación Mujeres](https://fundacionmujeres.es/).
+* **Servicios de Emprendimiento Colectivo y Social:** Programas autonómicos y protocolos para integrar el enfoque de género y de impacto en los planes de negocio modernos.
+
+---
+
+### Pasos para elaborar el plan de empresa
+
+El itinerario metodológico actualizado propone una secuencia estratégica clara: **definición de objetivos**, **elección de la estrategia**, **concreción de programas operativos**, **presupuestación** y **análisis de viabilidad** (técnica, comercial, económico-financiera y socioambiental). 
+
+Si el proyecto resulta viable, se procede a la constitución e inicio de actividad; de lo contrario, se reevalúan las hipótesis del modelo de negocio. Se recomienda realizar una proyección a **3 años**, desglosando el primer ejercicio mes a mes.
+
+Dentro de este proceso, la estructura operativa se divide en diez pasos clave:
+
+1. **Productos o servicios:** Definición del valor diferencial, proceso de producción/prestación, estrategia de precios y estructura de costes directos.
+2. **Mercado y cliente:** Análisis del sector, delimitación geográfica, estudio de la competencia direct e indirecta, perfil del cliente objetivo (*buyer persona*) y estimación realista de ventas.
+3. **Necesidades de inversión:** Instalaciones, equipos tecnológicos, maquinaria, licencias de software, existencias e inmovilizado inicial.
+4. **Financiación de la inversión:** Fondos propios (capital aportado por las promotoras), financiación bancaria, microcréditos para emprendedoras (como las líneas MicroBank/PAEM), subvenciones públicas y capital riesgo/business angels.
+5. **Estrategia de comunicación y marketing digital:** Presencia online (web, ecommerce, RRSS), SEO/SEM, alianzas comerciales, canales de distribución y presupuesto publicitario.
+6. **Recursos humanos y equipo:** Organigrama, perfiles profesionales, planes de formación, modalidades de contratación, política salarial y planes de igualdad interna.
+7. **Otros costes y análisis de resultados:** Gastos fijos (alquileres, suministros, seguros, servicios profesionales, amortizaciones) y cálculo del Umbral de Rentabilidad (punto muerto).
+8. **Estructura jurídica y trámites:** Elección de la forma legal (Empresaria Individual/Autónoma, Sociedad de Responsabilidad Limitada, Sociedad Cooperativa, etc.) y tramitación telemática (vía CIRCE y Puntos de Atención al Emprendedor - PAE).
+9. **Presupuesto de tesorería:** Planificación de cobros y pagos, estimación del flujo de caja (*cash flow*) y previsión del fondo de maniobra o caja mínima requerida.
+10. **Balances y patrimonio proyectado:** Evolución del activo, pasivo y patrimonio neto al cierre de cada ejercicio económico.
+
+---
+
+### Estructura final del documento
+
+El plan de empresa definitivo se articula en cinco grandes bloques estructurados:
+
+1. **Resumen Ejecutivo y Presentación del Equipo:** Presentación del equipo emprendedor, propósito empresarial y plan de puesta en marcha.
+2. **Plan Jurídico-Mercantil:** Forma legal elegida, licencias y protección de marcas/patentes.
+3. **Plan de Marketing y Comercial:** Análisis de mercado y mezcla de marketing (*marketing mix*).
+4. **Plan de Organización y Recursos Humanos:** Estructura organizativa y gestión del talento.
+5. **Plan Económico-Financiero:** Estados financieros proyectados y análisis de viabilidad.
+
+> **Nota normativa actualizada:** Cabe recordar que con la aprobación de la *Ley Crea y Crece* (Ley 18/2022), es posible constituir una Sociedad de Responsabilidad Limitada (S.L.) con un **capital social mínimo de 1
+
+
+
 
 
 
