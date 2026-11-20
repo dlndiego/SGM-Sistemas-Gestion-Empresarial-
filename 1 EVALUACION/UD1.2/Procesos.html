@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Procesos.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> or <div class="page"></div> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="sistemas-de-gestion-empresarial">SISTEMAS DE GESTION EMPRESARIAL</h1>
+<h2 id="procesos-en-el-apartado-de-gestion">PROCESOS EN EL APARTADO DE GESTION</h2>
+<h3 id="ud-12---procesos-de-gestion-empresarial">UD 1.2 - PROCESOS DE GESTION EMPRESARIAL</h3>
+<h2 id="actividad-1">Actividad 1</h2>
+<p>He buscado dos ejemplos de cada documento (algunos en internet y otros plantillas que se usan en programas de facturacion). Los nombres de las empresas los pongo como ejemplo porque lo importante es ver como es cada documento.</p>
+<h3 id="a-pedido">a) Pedido</h3>
+<p><strong>Ejemplo 1: pedido de una papeleria a un proveedor de material de oficina</strong></p>
+<ul>
+<li>
+<p>Numero de pedido: P-2026/0145</p>
+</li>
+<li>
+<p>Fecha: 12/10/2026</p>
+</li>
+<li>
+<p>Cliente (el que compra): Papeleria Ramos S.L., CIF B-12345678</p>
+</li>
+<li>
+<p>Proveedor (el que vende): Suministros Oficina Levante S.A., CIF A-87654321</p>
+</li>
+<li>
+<p>Productos: 20 cajas de folios A4 (4,50 euros/caja), 50 boligrafos azules (0,30 euros/ud), 10 archivadores (2,10 euros/ud)</p>
+</li>
+<li>
+<p>Condiciones: entrega en 5 dias, pago a 30 dias
+<strong>Ejemplo 2: pedido de un restaurante a un distribuidor de bebidas</strong></p>
+</li>
+<li>
+<p>Numero de pedido: 2026-088</p>
+</li>
+<li>
+<p>Fecha: 20/10/2026</p>
+</li>
+<li>
+<p>Cliente: Restaurante La Huerta</p>
+</li>
+<li>
+<p>Proveedor: Distribuciones Bebidas del Turia</p>
+</li>
+<li>
+<p>Productos: 30 cajas de agua 1,5 L, 15 cajas de cerveza, 10 cajas de refresco de cola</p>
+</li>
+<li>
+<p>Condiciones: entrega en el local el jueves por la mañana</p>
+</li>
+</ul>
+<h3 id="b-albaran">b) Albaran</h3>
+<p><strong>Ejemplo 1: albaran del pedido de la papeleria</strong></p>
+<ul>
+<li>
+<p>Numero de albaran: ALB-3321</p>
+</li>
+<li>
+<p>Fecha de entrega: 16/10/2026</p>
+</li>
+<li>
+<p>Referencia al pedido: P-2026/0145</p>
+</li>
+<li>
+<p>Datos de las dos empresas</p>
+</li>
+<li>
+<p>Mercancia entregada: 20 cajas de folios, 50 boligrafos, 10 archivadores</p>
+</li>
+<li>
+<p>Firma y sello de quien recibe la mercancia
+<strong>Ejemplo 2: albaran del restaurante</strong></p>
+</li>
+<li>
+<p>Numero de albaran: 7710</p>
+</li>
+<li>
+<p>Fecha: 22/10/2026</p>
+</li>
+<li>
+<p>Mercancia: 30 cajas de agua, 15 de cerveza, 8 de refresco (faltaban 2 cajas, quedan pendientes)</p>
+</li>
+<li>
+<p>Observaciones: &quot;2 cajas de refresco pendientes de entrega&quot;</p>
+</li>
+<li>
+<p>Firma del repartidor y del cliente</p>
+</li>
+</ul>
+<h3 id="c-factura">c) Factura</h3>
+<p><strong>Ejemplo 1: factura de la papeleria</strong></p>
+<ul>
+<li>
+<p>Numero de factura: F-2026/0987</p>
+</li>
+<li>
+<p>Fecha: 16/10/2026</p>
+</li>
+<li>
+<p>Datos fiscales completos de emisor y receptor (nombre, CIF, direccion)</p>
+</li>
+<li>
+<p>Descripcion: 20 cajas de folios (90,00 euros), 50 boligrafos (15,00 euros), 10 archivadores (21,00 euros)</p>
+</li>
+<li>
+<p>Base imponible: 126,00 euros</p>
+</li>
+<li>
+<p>IVA 21%: 26,46 euros</p>
+</li>
+<li>
+<p><strong>Total: 152,46 euros</strong></p>
+</li>
+<li>
+<p>Forma de pago: transferencia a 30 dias, con el IBAN de la empresa
+<strong>Ejemplo 2: factura del restaurante</strong></p>
+</li>
+<li>
+<p>Numero de factura: 2026-0412</p>
+</li>
+<li>
+<p>Fecha: 22/10/2026</p>
+</li>
+<li>
+<p>Descripcion: agua, cerveza y refresco (las unidades que se entregaron de verdad)</p>
+</li>
+<li>
+<p>Base imponible: 412,00 euros</p>
+</li>
+<li>
+<p>IVA 21%: 86,52 euros</p>
+</li>
+<li>
+<p><strong>Total: 498,52 euros</strong></p>
+</li>
+<li>
+<p>Forma de pago: domiciliacion bancaria</p>
+</li>
+</ul>
+<h3 id="d-recibo">d) Recibo</h3>
+<p><strong>Ejemplo 1: recibo de la luz (de una vivienda)</strong></p>
+<ul>
+<li>
+<p>Numero de recibo y referencia del contrato</p>
+</li>
+<li>
+<p>Periodo de facturacion: 01/09/2026 a 30/09/2026</p>
+</li>
+<li>
+<p>Consumo en kWh, potencia contratada, impuestos</p>
+</li>
+<li>
+<p>Importe total: 42,50 euros</p>
+</li>
+<li>
+<p>Fecha de cargo en cuenta: 05/10/2026
+<strong>Ejemplo 2: recibo del gimnasio</strong></p>
+</li>
+<li>
+<p>Concepto: cuota mensual de octubre</p>
+</li>
+<li>
+<p>Importe: 29,90 euros</p>
+</li>
+<li>
+<p>Cargo en cuenta (domiciliado)</p>
+</li>
+<li>
+<p>Datos del titular y del IBAN (parcialmente tapado, tipo ES12 **** **** 1234)</p>
+</li>
+</ul>
+<h3 id="diferencias-en-el-aspecto-fisico">Diferencias en el aspecto fisico</h3>
+<p>Lo primero que he visto es que <strong>el pedido y el albaran son documentos mas simples</strong>: normalmente son una tabla con productos y cantidades, y muchas veces ni llevan precios (sobre todo el albaran). Tienen mucho espacio al final para firmas, sellos u observaciones escritas a mano.</p>
+<p><strong>La factura es la mas &quot;seria&quot; y la mas llena de datos</strong>: tiene muchos datos fiscales, un cuadro de totales abajo a la derecha (base, IVA, total) y suele tener el logo de la empresa arriba. Se nota que es un documento legal.</p>
+<p><strong>El recibo</strong> suele ser el mas corto y compacto. Algunos son casi solo un recuadro con el importe, el concepto y la fecha. Los de luz o telefono ocupan mas porque llevan el desglose del consumo, pero el importe total siempre se ve bien grande.</p>
+<p>Tambien he notado que el albaran suele venir en <strong>varias copias</strong> (una para el cliente, otra para el proveedor, a veces una tercera para el transportista) y que se imprime en papel autocopiativo de colores, mientras que la factura se envia casi siempre en PDF.</p>
+<h3 id="comparacion-de-contenidos-y-coincidencias-de-datos">Comparacion de contenidos y coincidencias de datos</h3>
+<p>Coinciden en casi todos los documentos:</p>
+<ul>
+<li><strong>Datos de las dos partes</strong>: nombre, CIF y direccion del cliente y del proveedor.</li>
+<li><strong>Fecha</strong> y <strong>numero del documento</strong> (cada uno tiene su propia numeracion).</li>
+<li><strong>Productos o servicios</strong> con descripcion y cantidad.</li>
+<li><strong>Referencia cruzada</strong>: el albaran cita el numero del pedido y la factura cita el albaran. Asi se puede seguir todo el proceso.
+Lo que cambia:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Dato</th>
+<th>Pedido</th>
+<th>Albaran</th>
+<th>Factura</th>
+<th>Recibo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Precios</td>
+<td>A veces</td>
+<td>Normalmente no</td>
+<td>Si, siempre</td>
+<td>Solo el total</td>
+</tr>
+<tr>
+<td>IVA</td>
+<td>No</td>
+<td>No</td>
+<td>Si, desglosado</td>
+<td>Solo si procede</td>
+</tr>
+<tr>
+<td>Firma</td>
+<td>No (a veces)</td>
+<td>Si, de quien recibe</td>
+<td>No es obligatoria</td>
+<td>A veces (&quot;recibi&quot;)</td>
+</tr>
+<tr>
+<td>Condiciones de entrega</td>
+<td>Si</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Forma de pago</td>
+<td>A veces</td>
+<td>No</td>
+<td>Si</td>
+<td>Si</td>
+</tr>
+<tr>
+<td>Valor legal</td>
+<td>Compromiso de compra</td>
+<td>Prueba de entrega</td>
+<td>Justifica la venta y el IVA</td>
+<td>Justifica que se ha pagado</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Conclusion:</strong> el orden logico es pedido, albaran, factura y recibo. Los datos van pasando de un documento a otro, de hecho en un ERP se genera cada uno a partir del anterior para no tener que escribir todo otra vez. Lo que vi en los ejemplos es que, si en el albaran faltan unidades (como las 2 cajas de refresco), la factura se hace solo con lo que se entrego de verdad, y si no cuadran hay que hacer una rectificacion.</p>
+<hr>
+<h2 id="actividad-2">Actividad 2</h2>
+<h3 id="1-mis-bienes-activo">1. Mis bienes (activo)</h3>
+<p>Valorados a precio actual, o sea lo que sacaria si lo vendiera hoy (no lo que pague cuando lo compre).</p>
+<table>
+<thead>
+<tr>
+<th>Bien</th>
+<th>Valor (euros)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Telefono movil</td>
+<td>450,00</td>
+</tr>
+<tr>
+<td>Portatil</td>
+<td>700,00</td>
+</tr>
+<tr>
+<td>Ropa y calzado</td>
+<td>600,00</td>
+</tr>
+<tr>
+<td>Bicicleta</td>
+<td>250,00</td>
+</tr>
+<tr>
+<td>Moto (de segunda mano)</td>
+<td>1.800,00</td>
+</tr>
+<tr>
+<td>Muebles, escritorio y consola</td>
+<td>300,00</td>
+</tr>
+<tr>
+<td>Libros y material de estudio</td>
+<td>150,00</td>
+</tr>
+<tr>
+<td>Dinero en efectivo</td>
+<td>85,00</td>
+</tr>
+<tr>
+<td>Dinero en la cuenta del banco</td>
+<td>1.240,00</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Total de bienes:</strong>
+450 + 700 + 600 + 250 + 1.800 + 300 + 150 + 85 + 1.240 = <strong>5.575,00 euros</strong></p>
+<p>No tengo casa en propiedad (vivo de alquiler), asi que no hay ningun inmueble en la lista.</p>
+<h3 id="2-mis-deudas-pasivo">2. Mis deudas (pasivo)</h3>
+<p>Cuento tambien las que todavia no he pagado aunque ya las deba.</p>
+<table>
+<thead>
+<tr>
+<th>Deuda</th>
+<th>Importe (euros)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alquiler de la habitacion (mes de noviembre)</td>
+<td>350,00</td>
+</tr>
+<tr>
+<td>Recibo de telefonia / movil</td>
+<td>29,90</td>
+</tr>
+<tr>
+<td>Recibo de luz e internet</td>
+<td>42,50</td>
+</tr>
+<tr>
+<td>Letras pendientes de la moto</td>
+<td>1.350,00</td>
+</tr>
+<tr>
+<td>Tarjeta de credito (compras de este mes)</td>
+<td>60,00</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Total de deudas:</strong>
+350 + 29,90 + 42,50 + 1.350 + 60 = <strong>1.832,40 euros</strong></p>
+<h3 id="3-derechos-de-cobro">3. Derechos de cobro</h3>
+<table>
+<thead>
+<tr>
+<th>Persona</th>
+<th>Concepto</th>
+<th>Importe (euros)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Un amigo (Pablo)</td>
+<td>Dinero que le preste para un concierto</td>
+<td>40,00</td>
+</tr>
+<tr>
+<td>Mi hermano</td>
+<td>Prestamo de la semana pasada</td>
+<td>25,00</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Total que me deben:</strong> 40 + 25 = <strong>65,00 euros</strong></p>
+<h3 id="4-patrimonio-neto">4. Patrimonio neto</h3>
+<p>La formula es:</p>
+<p><strong>Patrimonio neto = Bienes + Derechos de cobro - Deudas</strong></p>
+<ul>
+<li>Bienes: 5.575,00</li>
+<li>Derechos de cobro: 65,00</li>
+<li><strong>Total activo: 5.640,00 euros</strong></li>
+<li><strong>Total pasivo (deudas): 1.832,40 euros</strong>
+<strong>Patrimonio neto = 5.640,00 - 1.832,40 = 3.807,60 euros</strong></li>
+</ul>
+<h3 id="conclusion">Conclusion</h3>
+<p>Mi patrimonio neto es <strong>positivo (3.807,60 euros)</strong>, es decir, tengo mas cosas y derechos que deudas. Aun asi, la mayor parte de lo que tengo es la moto, el portatil y el dinero del banco, y la deuda mas grande son las letras de la moto, asi que si quisiera tener mas margen lo primero que haria seria ir pagando esas letras. Al hacer el ejercicio me he dado cuenta de que una persona es como una empresa pequeña: tiene activo (lo que posee), pasivo (lo que debe) y patrimonio neto (la diferencia), que es justo lo que se hace en contabilidad.</p>
+
+</body>
+</html>
