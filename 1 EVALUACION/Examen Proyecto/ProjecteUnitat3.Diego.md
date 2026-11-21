@@ -1,5 +1,7 @@
 # PROJECTE UNITAT 3
 # INSTAL·LACIÓ I PARAMETRITZACIÓ DE SISTEMES ERP
+
+`DE: DIEGO DE LEON NAVARRO`
 ---
 ## INDICE
 
@@ -252,4 +254,85 @@ Para esto cerramos sesion con el Admin y iniciamos sesion con:
 > La instalacion de este servicio da errores secundarios ya que necesita dependencias que no estan en el ONEDRIVE.
 
 - Si nos metemos en contactos y buscamos a algun contacto que tenga movil nos sale el icono de Whatsapp, asi queda: 
+
 ![](IMGEJ3/WASCONTACTO.png)
+
+#### Ejercicio 4. CREACION DE PAGINA WEB EN ODOO
+
+1. Accedemos a Apps y buscamos WebSite:
+
+![](IMGEJ4/InstalandoWeb.png)
+
+2. Instalamos y comprobamos que esta instalada:
+   
+- Se nos va a abrir una pagina de configuracion para nuestor sitio web, como esta :
+
+![](IMGEJ4/PaginaConfiguracion.png)
+
+- Y completamos el formulario que nos hace, en este formulario nos pregunta lo siguiente:
+  - **Tipo de Web**
+  - **Nombre del Sitio**
+  - **Idioma**
+  - **Objetivo**
+
+- Luego seleccionamos una plantilla (no es necesario, pero ahora tiempo), y la configuramos:
+  
+![](IMGEJ4/CustoPaginaDe0.png)
+
+- Vamos a configurarla de esta manera para que quede asi (como pide el enunciado):
+
+![](IMGEJ4/PaginaCostumizada.png)
+
+>He accedido desde el UBUNTU para que veamos que se puede acceder y que no hay ningun tipo de problema.
+
+#### Ejercicio 5. PONER UN PRODUCTO EN LA WEB
+
+1. Para esto necesitamos una APP de comercio asi que vamos a instalar Website_sale:
+
+![](IMGEJ5/InstalarServicio.png)
+
+2. Vamos a acceder a la pagina de ventas:
+
+- Para esto tenemos que entrar a nuestro **Sitio Web** y veremos como aparece **Comercio Electronico** al lado de **Site**, ahi sera donde **crearemos/organizaremos** nuestros **productos**:
+  
+![](IMGEJ5/Site.png)
+
+- Si le damos a las 3 rayas de nuestro Sitio Web vemos como sale Botiga, y si accedemos ahi esta la tienda de productos:
+
+![](IMGEJ5/BotigaSinCrearProducto.png)  
+
+3. Vamos a crear un producto, para eso vamos a acceder a **Comercio Electronico** y a **Productes**, y aqui dentro veremos lo siguiente:
+   
+![](IMGEJ5/Productos.png)
+
+- Estando aqui vamos a crear un Producto, asi que le damos a crear que aparece arriba a la izquierda y ponemos lo siguiente:
+
+![](IMGEJ5/CreandoElProducto.png)
+
+- Ahora accedemos a la tienda para comprobar que se ha creado correctamente: 
+  
+![](IMGEJ5/CreadoCorrectamente.png)
+
+#### Ejercicio 6. ACCEDER DESDE EL CLIENTE DE UBUNTU 
+
+> [!NOTE]
+> Yo he habilitddo el Firewall de Windows, creando una regla y haciendo el siguiente comando para hacer privada la Red Interna
+> ![](IMGEJ6/FIREWALL.png)
+
+1. Buscamos en el navegador de UBUNTU `http://IP_SERVER:4040`
+
+![](IMGEJ6/AccediedoDesdeElCliente.png)
+
+- Ahora que estamos dentro le damos a las 3 rayas y nos vamos a **BOTIGA** y ahi buscamos nuestro producto **DiegoExer5**, y comprobamos que funciona:
+  
+![](IMGEJ6/ProductoDesdeElCliente.png)
+
+#### Ejercicio 7. ACCEDIENDO CON MARC DEMO DESDE EL CLIENTE
+
+1. Cerramos sesion en el cliente y iniciamos sesion con MARC DEMO:
+
+![](IMGEJ7/IniciarSesionDemo.png)
+
+2. Una vez dentro accedemos a -> Ventas y ahi nos saldras todos los presupuestos que tiene MARC DEMO ya que esos son los permisos que le hemos dado a el usuario:
+
+![](IMGEJ7/VentasMarcDemo.png)
